@@ -17,15 +17,21 @@ spec:
     }
     stages {
         stage('build') {
-            sh 'echo "npm release"'
+            steps {
+                sh 'echo "npm release"'
+            }       
         }
     
         stage('test') {
-            sh 'echo "npm test"'
+            steps {
+                sh 'echo "npm test"'
+            }
         }
 
         stage('deploy') {
-            sh 'echo "deployment script"'
+            steps {
+                sh 'echo "deployment script"'
+            }
         }
     }
 
