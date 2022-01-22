@@ -1,2 +1,2 @@
 # Scianta
-commit on release branch
+trigger build when commit on release branch
